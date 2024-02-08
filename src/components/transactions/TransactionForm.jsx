@@ -30,6 +30,7 @@ function TransactionForm() {
           placeholder='Ingresa una descripción' 
           onChange={(e) => setDeescription(e.target.value)}
           className='bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full'
+          value={description}
         />
         <input 
           type="number" 
@@ -37,6 +38,7 @@ function TransactionForm() {
           step={0.01}
           onChange={(e) => setAmount(e.target.value)}
           className='bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full'
+          value={amount}
         />
         <button className='bg-indigo-700 text-white px-3 py-2 rounded-lg block mb-2 w-full'>Añade una transacción</button>
       </form>

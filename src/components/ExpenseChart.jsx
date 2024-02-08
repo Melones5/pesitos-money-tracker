@@ -19,7 +19,7 @@ function ExpenseChart() {
     totalExpenses,
   });
 
-  const expensesPercentage = Math.round((totalExpenses / totalIncomes) * 100);
+  const expensesPercentage = totalIncomes === 0 ? 0 : Math.round((totalExpenses / totalIncomes) * 100);
   const incomesPercentage = 100 - (expensesPercentage);
 
   return (
